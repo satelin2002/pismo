@@ -36,6 +36,7 @@ module Pismo
       ['link[@rel="fluid-icon"]', lambda { |el| el.attr('href') }],      # Get a Fluid icon if possible..
       ['link[@rel="shortcut icon"]', lambda { |el| el.attr('href') }],
       ['link[@rel="icon"]', lambda { |el| el.attr('href') }]
+      ['link[@rel="apple-touch-icon"]', lambda { |el| el.attr('href') }]
     ]
 
     def titles
